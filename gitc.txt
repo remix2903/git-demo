@@ -4,4 +4,7 @@ git status - show files and changes in git
 git add <File>
 git dl <File>
 git log - show log of chances
-git push - push files to server
+git push - push updates to server
+
+Pull changes from remote 
+git pull - get files updates server
