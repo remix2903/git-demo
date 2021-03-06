@@ -1,9 +1,11 @@
+Work with Git Bash
 ls - show location 
 cd /c/Users - go to the directory
 git status - show files and changes in git
-git add <File>
-git dl <File>
 git log - show log of chances
+git dl <File>
+git add <File>
+git commit -m "text inf
 git push - push updates to server
 
 Pull changes from remote 
