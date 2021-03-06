@@ -1,6 +1,7 @@
 Work with Git Bash
 ls - show location 
 cd /c/Users - go to the directory
+git remote -v  = show remote connection
 git status - show files and changes in git
 git log - show log of chances
 git dl <File>
