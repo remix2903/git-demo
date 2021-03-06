@@ -1,4 +1,4 @@
-Work with Git Bash
+- Work with Git Bash
 ls - show location 
 cd /c/Users - go to the directory
 git remote -v  = show remote connection
@@ -9,9 +9,9 @@ git add <File>
 git commit -m "text inf
 git push - push updates to server
 
-Pull changes from remote 
+- Pull changes from remote 
 git pull - get files updates server
 
-Git Gui - interface program for git
+- Git Gui - interface program for git
 git gui& - run programm 
 gitk& - run history of chages
