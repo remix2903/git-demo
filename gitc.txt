@@ -10,3 +10,6 @@ git push - push updates to server
 
 Pull changes from remote 
 git pull - get files updates server
+
+Git Gui - interface program for git
+git gui - run programm 
