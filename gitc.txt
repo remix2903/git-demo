@@ -13,4 +13,5 @@ Pull changes from remote
 git pull - get files updates server
 
 Git Gui - interface program for git
-git gui - run programm 
+git gui& - run programm 
+gitk& - run history of chages
