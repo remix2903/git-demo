@@ -31,4 +31,4 @@ git show 612179 - type firs symbols of tree and get essential replica of blob fi
 - Undoing changes
 git checkout -- <File> rollback single file
 git checkout . rollback all files in current directory it's immutable back after
-git clean -xdf delete all previos uknown new files
+git clean -xdf delete all previos uknown new files;
