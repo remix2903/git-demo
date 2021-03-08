@@ -35,4 +35,35 @@ git checkout .  - rollback all files from the current and bellow directory it's 
 git clean -xdf delete all previos new created files
 
 -- staging area (when file in index level, after "git add <file>" command)
-git reset -- <file> - rollback changes after command add
+git reset -- <file> - rollback changes after command add (after can use "git checkout -- <file>")
+
+-- local branch (when commit done in local branch)
+git reset HEAD^^ (HEAD~2) - delet the commit
+git commit --amend - m "text"  - add some changes to commit after commit
+
+-- remote ropository
+git revert <sha1> - instead of deleting it's undoing changes and create new reverted commit
+ > Press "Insert" on left bottom, add the text to update info, 
+press Esc, text "wq" (write and quit) or q! (not change and exit)
+
+- Git reset
+git reset -- soft  HEAD~1 - return from by 1 commit to index stage
+git reset -- mixed HEAD^  - return last commit to file system stage
+git reser -- hard - delete all from commited stage (immutable)
+
+- Git .gitignore (to display changes only in specific files
+*.log - any file file.log to bi hidden
+!error.log - hide all file.log but open error.log
+/TODO - ignore only files in the current direcnory, not in subdir/TODO
+build/ - ignore all file in the build/ directory
+doc/*.txt - ignore doc/notes.txt, but not doc/server/another.txt
+doc/**/*.pdf - ignore all .pdf files in the doc/ directory
+ff
+- Branching and marge
+git checkout -b feauture - switched to create a new breach 'feauture'
+git chockour main - switch to main branch
+git merge feauture - to unite "current" branch with "feauture"
+
+-Conflict solving
+
+
