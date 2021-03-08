@@ -58,12 +58,27 @@ git reser -- hard - delete all from commited stage (immutable)
 build/ - ignore all file in the build/ directory
 doc/*.txt - ignore doc/notes.txt, but not doc/server/another.txt
 doc/**/*.pdf - ignore all .pdf files in the doc/ directory
-ff
-- Branching and ffff marge
+
+- Branching and marge
 git checkout -b feauture - switched to create a new breach 'feauture'
 git chockour main - switch to main branch
 git merge feauture - to unite "current" branch with "feauture"
+git branch --all - show all branch
 
--Conflict solving
+- Conflict solving
+git merge --abort  -  rollback all changes to last one
+git chackout --Xours or Xtheirs  - telling to left my version or lastone
+git diff - resolve manually  (better use grahical interface)
+git revert 09fe472 instead of deleting it's undoing changes and create new reverted commit
+git merge --continue 
+user merge tool
 
+- Rebase
+- Cherry pick (coppi commit to front of other, has a same sh1 code)
+
+- Teg short text to maark a commit
+git tag ver1 - mark commit with tag
+git tag -list - view tags
+git push --tags - push
+git checkout ver1 - checkout it
 
