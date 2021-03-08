@@ -59,7 +59,7 @@ build/ - ignore all file in the build/ directory
 doc/*.txt - ignore doc/notes.txt, but not doc/server/another.txt
 doc/**/*.pdf - ignore all .pdf files in the doc/ directory
 ff
-- Branching and marge
+- Branching and ffff marge
 git checkout -b feauture - switched to create a new breach 'feauture'
 git chockour main - switch to main branch
 git merge feauture - to unite "current" branch with "feauture"
