@@ -15,3 +15,20 @@ git pull - get files updates server
 - Git Gui - interface program for git
 git gui& - run programm 
 gitk& - run history of chages
+
+- Inside .git
+Three fundametnal object types: commit, tree, blob(binary larg obj)
+Commit contain link -> previos Commit contains -> Tree (contain name of the file and blob contant) 
+
+Every commit can contain files that were changed. Commit basically refferences the trees.
+Trees - name of files that were commiting as well as name of directories that store them
+blob - content of the file
+
+git show -s --pretty=raw 63b9b  - show details about commit
+git ls-tree b92f6  - show details about tree
+git show 612179 - type firs symbols of tree and get essential replica of blob file
+
+- Undoing changes
+git checkout -- <File> rollback single file
+git checkout . rollback all files in current directory it's immutable back after
+git clean -xdf delete all previos uknown new files
