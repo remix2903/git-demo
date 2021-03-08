@@ -29,6 +29,10 @@ git ls-tree b92f6  - show details about tree
 git show 612179 - type firs symbols of tree and get essential replica of blob file
 
 - Undoing changes
-git checkout -- <File> rollback single file
-git checkout . rollback all files in current directory it's immutable back after
-git clean -xdf delete all previos uknown new files
+-- working deirectory
+git checkout -- <File>  - rollback single file
+git checkout .  - rollback all files from the current and bellow directory it's immutable back after
+git clean -xdf delete all previos new created files
+
+-- staging area (when file in index level, after "git add <file>" command)
+git reset -- <file> - rollback changes after command add
