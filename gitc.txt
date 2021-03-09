@@ -76,9 +76,51 @@ user merge tool
 - Rebase
 - Cherry pick (coppi commit to front of other, has a same sh1 code)
 
-- Teg short text to maark a commit
-git tag ver1 - mark commit with tag
+- Teg short text to mark a commit create and use after pushing a commit
+git tag version1 - mark commit with tag
+git checkout version1 - checkout it
 git tag -list - view tags
-git push --tags - push
-git checkout ver1 - checkout it
+git push --tags - push to remote
+
+-Stashing (special location to temporary store info that still not committed)
+git stash save "description" - save working directory
+git stash list - view stashes we have
+sit stash apply stash@{0} - bring back and leave in stash
+git stash pop - bring back and remove from stash
+git stash drop - clear 
+
+- Remotes
+git remote -v - to see whic server we working with
+git remote remove origion - to delete actual remotestor 
+
+if lose github account to restore git project
+git add origion git@github.com:remix2903/git-beckup.git - add new remote, git push, and
+shift+insert to coppy offered command by bash (git push --set-upstream origion master)
+
+-Branching strategy
+Centralized stategy - work in single branch no create other
+Feauture-branch workflow - create additional feauture branch, then merge it together
+Gitflow 
+	- develop in develo branch, add feauthure in feature branch then merge
+	- store production cod in master, and developing in other branch
+	- store in master with tag, develop in develop brang, fix in hotfix branch then marge
+Integration manager workflow
+	developer1 and developer2 take info from blassed repo, send owm code to de1public and de2public, 
+	integration manager collect and check info and send to blessed repository
+Dictator and Lieutenant workflow
+	developers get code from blassed repo, lieutenants from developers, dictator from lieutenants 
+	and push to blessed repo
+Forking workflow(fork - coppy of repository)
+	original developer give permission to coppy fork add commits to it then pull forks from developers 
+	and push to original repo if he want
+	
+
+
+Additional 
+
+
+
+
+
+
 
